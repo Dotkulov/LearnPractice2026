@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модальное окно</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container modal-page">
+        <!-- Add form -->
+        <div class="add-form">
+            <div class="add-form-rectangle"></div>
+            <input type="text" class="add-input" placeholder="Новый пост ...">
+            <button class="add-btn">
+                <span class="add-btn-text">Добавить</span>
+            </button>
+        </div>
+
+        <!-- Post 1 (collapsed) -->
+        <div class="post post-1">
+            <div class="post-rectangle"></div>
+            <div class="post-text">
+                Сегодня было замечательное предложение пойти поужинать этим вечером. Главное, чтобы погода была преимущественно теплой.
+            </div>
+            <div class="post-line"></div>
+            <div class="post-actions">
+                <button class="btn btn-blue btn-comment">Комментарии</button>
+                <span class="comment-count">Количество комментарий - 2</span>
+                <button class="btn btn-blue btn-edit">Изменить</button>
+                <button class="btn btn-pink btn-delete">Удалить</button>
+            </div>
+        </div>
+
+        <!-- Post 2 (collapsed) -->
+        <div class="post post-2-collapsed">
+            <div class="post-rectangle"></div>
+            <div class="post-text">
+                Сегодня было замечательное предложение пойти поужинать этим вечером. Главное, чтобы погода была преимущественно теплой.
+            </div>
+            <div class="post-line"></div>
+            <div class="post-actions">
+                <button class="btn btn-blue btn-comment">Комментарии</button>
+                <span class="comment-count">Количество комментарий - 2</span>
+                <button class="btn btn-blue btn-edit">Изменить</button>
+                <button class="btn btn-pink btn-delete">Удалить</button>
+            </div>
+        </div>
+
+        <!-- Post 3 (collapsed) -->
+        <div class="post post-3">
+            <div class="post-rectangle"></div>
+            <div class="post-text">
+                Сегодня было замечательное предложение пойти поужинать этим вечером. Главное, чтобы погода была преимущественно теплой.
+            </div>
+            <div class="post-line"></div>
+            <div class="post-actions">
+                <button class="btn btn-blue btn-comment">Комментарии</button>
+                <span class="comment-count">Количество комментарий - 2</span>
+                <button class="btn btn-blue btn-edit">Изменить</button>
+                <button class="btn btn-pink btn-delete">Удалить</button>
+            </div>
+        </div>
+
+        <!-- Modal area overlay -->
+        <div class="modal-area">
+            <div class="modal-window">
+                <div class="modal-rectangle"></div>
+                <div class="modal-input-container">
+                    <div class="modal-input-rectangle"></div>
+                    <div class="modal-input-text">
+                        Сегодня было замечательное предложение пойти поужинать этим вечером. Главное, чтобы погода была преимущественно теплой.
+                    </div>
+                </div>
+                <button class="btn btn-blue btn-confirm">Подтвердить</button>
+                <button class="btn btn-pink btn-close">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем скомпилированный TypeScript -->
+    <script src="dist/script.js"></script>
+</body>
+</html>

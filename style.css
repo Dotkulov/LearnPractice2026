@@ -1,0 +1,389 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #E1F8FF;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #E1F8FF;
+    overflow: hidden;
+}
+
+/* ===== Форма добавления ===== */
+.add-form {
+    position: absolute;
+    width: 800px;
+    height: 89px;
+    left: 320px;
+    top: 29px;
+}
+
+.add-form-rectangle {
+    position: absolute;
+    width: 800px;
+    height: 89px;
+    left: 0;
+    top: 0;
+    background: #FCFBFB;
+    border: 2px solid #0094FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.add-input {
+    position: absolute;
+    width: 506px;
+    height: 51px;
+    left: 21px;
+    top: 19px;
+    background: #FCFBFB;
+    border: 1px solid #6E6E6E;
+    border-radius: 15px;
+    padding: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #000;
+    outline: none;
+}
+
+.add-input::placeholder {
+    color: #000;
+}
+
+.add-btn {
+    position: absolute;
+    width: 177px;
+    height: 51px;
+    left: 607px;
+    top: 19px;
+    background: #216CFF;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.add-btn-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FCFBFB;
+}
+
+/* ===== Посты ===== */
+.post {
+    position: absolute;
+    width: 800px;
+}
+
+.post-rectangle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FCFBFB;
+    border: 2px solid #0094FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.post-text {
+    position: relative;
+    width: 752px;
+    margin: 16px 0 0 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    z-index: 1;
+}
+
+.post-line {
+    position: relative;
+    width: 750px;
+    margin: 16px 0 0 21px;
+    border: 1px solid #9C9C9C;
+    z-index: 1;
+}
+
+.post-actions {
+    position: relative;
+    margin: 14px 0 0 21px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+    padding-bottom: 21px;
+}
+
+.comment-count {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-left: 23px;
+}
+
+/* ===== Кнопки ===== */
+.btn {
+    border: none;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FCFBFB;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-blue {
+    background: #216CFF;
+}
+
+.btn-pink {
+    background: #FF218B;
+}
+
+.btn-comment {
+    width: 156px;
+    height: 43px;
+}
+
+.btn-edit {
+    width: 121px;
+    height: 43px;
+}
+
+.btn-delete {
+    width: 121px;
+    height: 43px;
+}
+
+.btn-add-comment {
+    width: 117px;
+    height: 43px;
+}
+
+.btn-delete-comment {
+    width: 107px;
+    height: 43px;
+}
+
+.btn-hide {
+    width: 115px;
+    height: 43px;
+}
+
+/* ===== Post 1 (свернутый) ===== */
+.post-1 {
+    height: 203px;
+    left: 320px;
+    top: 177px;
+}
+
+/* ===== Post 2 (развернутый с комментариями) ===== */
+.post-2 {
+    height: 441px;
+    left: 320px;
+    top: 417px;
+}
+
+.add-comment-form {
+    position: relative;
+    margin: 20px 0 0 21px;
+    display: flex;
+    gap: 20px;
+    z-index: 1;
+}
+
+.comment-input {
+    width: 613px;
+    height: 43px;
+    background: #FFFFFF;
+    border: 1px solid #6E6E6E;
+    border-radius: 15px;
+    padding: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+}
+
+.comment-input::placeholder {
+    color: #000;
+}
+
+.comment-item {
+    position: relative;
+    margin: 19px 0 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+}
+
+.comment-rectangle {
+    position: absolute;
+    width: 624px;
+    height: 43px;
+    left: 0;
+    top: 0;
+    background: #FCFBFB;
+    border: 2px solid #0094FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.comment-text {
+    position: relative;
+    width: 590px;
+    padding-left: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    z-index: 1;
+}
+
+.btn-delete-comment {
+    margin-left: auto;
+    margin-right: 21px;
+}
+
+.btn-hide {
+    position: relative;
+    margin: 31px 0 0 21px;
+    z-index: 1;
+}
+
+/* ===== Модальное окно (страница modal.html) ===== */
+.modal-page .post-1 {
+    top: 177px;
+}
+
+.modal-page .post-2-collapsed {
+    height: 203px;
+    left: 316px;
+    top: 411px;
+}
+
+.modal-page .post-2-collapsed .post-rectangle {
+    width: 800px;
+}
+
+.modal-page .post-2-collapsed .post-text {
+    left: 0;
+}
+
+.modal-page .post-2-collapsed .post-line {
+    left: 0;
+}
+
+.modal-page .post-2-collapsed .post-actions {
+    left: 0;
+}
+
+.modal-page .post-3 {
+    height: 203px;
+    left: 320px;
+    top: 646px;
+}
+
+/* Modal area overlay */
+.modal-area {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0;
+    top: 0;
+    background: rgba(108, 158, 255, 0.59);
+    z-index: 10;
+}
+
+.modal-window {
+    position: absolute;
+    width: 800px;
+    height: 220px;
+    left: 316px;
+    top: 354px;
+}
+
+.modal-rectangle {
+    position: absolute;
+    width: 800px;
+    height: 220px;
+    left: 0;
+    top: 0;
+    background: #FCFBFB;
+    border: 2px solid #0094FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.modal-input-container {
+    position: absolute;
+    width: 751px;
+    height: 113px;
+    left: 20px;
+    top: 30px;
+}
+
+.modal-input-rectangle {
+    position: absolute;
+    width: 751px;
+    height: 113px;
+    left: 0;
+    top: 0;
+    background: #FFFFFF;
+    border: 1px solid #6E6E6E;
+    border-radius: 15px;
+}
+
+.modal-input-text {
+    position: relative;
+    width: 752px;
+    padding: 9px 0 0 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    z-index: 1;
+}
+
+.btn-confirm {
+    position: absolute;
+    width: 148.67px;
+    height: 43px;
+    left: 469px;
+    top: 159px;
+    background: #216CFF;
+    border-radius: 15px;
+}
+
+.btn-close {
+    position: absolute;
+    width: 121px;
+    height: 43px;
+    left: 650px;
+    top: 159px;
+    background: #FF218B;
+    border-radius: 15px;
+}
